@@ -1,7 +1,9 @@
 public class SecondLargest {
     public static void main(String args[]){
-        int[] arr = {4,5,3,1,2};
-        System.out.println(solve(arr));
+        int[] arr1 = {4,5,3,1,2};
+        int[] arr2 ={5,5,4};
+        System.out.println(solve(arr1));
+        System.out.println(solve((arr2)));
         return;
     }
     public static int solve(int[] arr){
