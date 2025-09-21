@@ -1,6 +1,7 @@
 public class Patterns {
     public static void main(String[] args) {
         HollowDiamondStar(3);
+        FloydTriangle(5);
     }
     public static void HollowDiamondStar(int n){
         for (int i=1;i<=n;i++){
@@ -29,6 +30,16 @@ public class Patterns {
                 }
 
                 System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void FloydTriangle(int n){
+        int dummy =1;
+        for (int i=1;i<=n;i++){
+            for (int j=1;j<=i;j++){
+                System.out.print(dummy++ +" ");
             }
             System.out.println();
         }
